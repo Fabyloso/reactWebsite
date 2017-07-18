@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import ResumeItemReducer from './reducer_resume_item';
+import ResumeItemReducer from './reducer_resume_section';
 
 const rootReducer = combineReducers({
-    resume_item: ResumeItemReducer
+    resume_items: ResumeItemReducer
 });
 
 export default rootReducer;
