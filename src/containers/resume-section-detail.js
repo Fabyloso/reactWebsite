@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class SectionDetail extends Component{
     render(){
         if(!this.props.section){
-        return;
+            return <div>Click something</div>;
         }
         return (
             <div>

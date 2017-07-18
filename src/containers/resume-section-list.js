@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 class ResumeList extends Component{
     renderList(){
-        return this.props.resume_items.map((resume_item) =>{
+        return this.props.section.map((resume_item) =>{
           return(
               <li
                   key={resume_item.section}
@@ -28,7 +28,7 @@ class ResumeList extends Component{
 }
 function mapStateToProps(state) {
     return {
-        resume_items: state.resume_items
+        section: state.section
     };
 }
 
