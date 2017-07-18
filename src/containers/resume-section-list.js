@@ -9,7 +9,7 @@ class ResumeList extends Component{
           return(
               <li
                   key={resume_item.section}
-                  onclick={() => this.props.selectSection(resume_item)}
+                  onClick={() => this.props.selectSection(resume_item)}
                   className="list-group-item">
                   {resume_item.section}
               </li>
